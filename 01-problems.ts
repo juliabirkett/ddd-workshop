@@ -59,7 +59,16 @@ const user2: User = {
  * Hint: Search for 'TS literal types'
  */
 
-type Post = any;
+type PostStatus = "DRAFT" | "PUBLISHED";
+
+type Post = {
+  id: number,
+  userId: number,
+  status: PostStatus,
+  title: string,
+  imageUrl?: string,
+  content?: string,
+};
 
 const post1: Post = {
   id: 1,
