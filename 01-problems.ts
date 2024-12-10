@@ -8,10 +8,10 @@
  * Hint: Search for 'TS basic types'
  */
 
-const id: any = 1;
-const email: any = "user@test.com";
-const isVerified: any = true;
-const favouriteTopics: any = ["World Politics", "Sports", "The Environment"];
+const id: number = 1;
+const email: string = "user@test.com";
+const isVerified: boolean = true;
+const favouriteTopics: string[] = ["World Politics", "Sports", "The Environment"];
 
 /**
  * ---------
