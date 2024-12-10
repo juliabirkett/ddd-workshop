@@ -99,11 +99,11 @@ const post2: Post = {
 
 const allPosts = [post1, post2];
 
-function getPostsByUserId(userId: any): any {
+function getPostsByUserId(userId: number): Post[] {
   return allPosts.filter((post) => post.userId === userId);
 }
 
-async function getPostById(id: any): any {
+async function getPostById(id: number | string): Promise<Post | undefined> {
   if (typeof id === "string") {
     return allPosts.find((post) => post.id === parseInt(id));
   }
