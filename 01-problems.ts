@@ -24,7 +24,13 @@ const favouriteTopics: string[] = ["World Politics", "Sports", "The Environment"
  * Hint: Search for 'TS unions'
  */
 
-type User = any;
+type User = {
+  id: number,
+  email: string,
+  backupEmail: string | null,
+  isVerified: boolean,
+  favouriteTopics: string[]
+};
 
 const user1: User = {
   id: 1,
