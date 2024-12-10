@@ -127,7 +127,7 @@ const postByStringId = getPostById("1");
  * Hint: Search for 'TS Record types'
  */
 
-type UnknownData = any;
+type UnknownData = Record<string, unknown>;
 
 function processAPIRequest(data: UnknownData): string {
   return `API request processed with data: ${JSON.stringify(data)}`;
@@ -135,7 +135,6 @@ function processAPIRequest(data: UnknownData): string {
 
 // USAGE
 // -----
-
 processAPIRequest({
   foo: "foo",
   bar: "bar",
